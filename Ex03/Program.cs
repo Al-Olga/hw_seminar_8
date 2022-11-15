@@ -54,6 +54,9 @@ int max=int.Parse(Console.ReadLine() ?? "0");
 
 int[,,] array = new int[m,n,l];
 
-EnterArray (array, min, max);
-
-PrintArray(array);
+if (m*n*l <= 90) 
+{
+    EnterArray (array, min, max);
+    PrintArray(array);
+}
+else Console.Write("Выбран слишком большой масив");
